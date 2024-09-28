@@ -12,4 +12,6 @@ Git provides several ways to undo changes, depending on what you want to do. Whe
 
     git checkout -- <file_name>
 
+3. Amend the last commit: If you've already committed but want to modify the most recent commit (e.g., to change the commit message or add new changes):
 
+    git commit --amend
