@@ -1,0 +1,15 @@
+
+
+ # Undoing Changes in Git
+Git provides several ways to undo changes, depending on what you want to do. Whether it's modifying a commit, undoing staged changes, or discarding local changes, Git gives you flexibility in how to revert or reset your work.
+
+1. Unstage a file (after using git add): If you accidentally added a file to the staging area and want to unstage it:
+
+    git reset <file_name>
+
+
+2. Discard all local changes (to a file, before committing): If you want to undo changes made to a file and revert it back to the last committed state:
+
+    git checkout -- <file_name>
+
+
