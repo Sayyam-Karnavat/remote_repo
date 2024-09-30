@@ -1,0 +1,41 @@
+In Git, files go through several stages:
+
+Untracked – Files that Git doesn't know about yet.
+Staged – Files ready to be committed.
+Committed – Files that have been saved into the Git history.
+
+
+# Before adding or committing files, it's useful to see the current state of your repository. The ### git status #### command shows you which files have been changed, added, or staged.
+
+# We can either manually add untracked files using
+ - git add <filename> (File should be existing in folder)
+
+# Or to add all files :-
+ - git add .
+
+
+
+# To remove accidental or unecessary file added using git add use :- 
+
+git rm --cached <file> (This will remove the file only from commit stage)
+
+
+
+## Committing Changes
+Once your files are staged, you can create a commit. A commit is a snapshot of your project at a specific time, with a message describing the changes.
+
+- git commit -m "Your commit message"
+
+
+
+# Get commit history (This shows all commits, along with their hash, author, date, and message.)
+ - git log
+
+
+
+
+Summary of Commands:
+Check repository status: git status
+Stage files: git add <file> or git add .
+Commit changes: git commit -m "Your commit message"
+View commit history: git log

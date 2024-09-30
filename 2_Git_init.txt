@@ -1,0 +1,15 @@
+To begin tracking your project with Git, you need to initialize a repository. This creates a hidden .git folder, 
+where Git stores all of its configuration and history for the project.
+
+
+# git init :- This initializes an empty Git repository in your project folder.
+
+
+
+## Configuring User Information
+Before you make any commits, it's important to set your identity (name and email) so that Git can track who made the changes. This information is associated with your commits.
+
+Note :- (--global makes these settings apply to all repositories on your system.
+If you want to set user info for just one repository, omit --global.)
+
+

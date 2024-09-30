@@ -1,0 +1,37 @@
+
+
+# Remote repositories allow you to collaborate with others by pushing your local code to GitHub and pulling updates from others.
+
+
+1. Connecting to a Remote Repository
+You can link your local repository to a remote one (like GitHub). To do this, you need the URL of your GitHub repository.
+
+    git remote add origin <remote_repository_URL> (origin is the default name given to the remote repository, but you can name it something else if you like.)
+    (This command will only link to repository and not download all files )
+
+    - To download all files of linked remote repository use pull command 
+    -  git pull origin main
+     # OR clone the repository
+
+     - git clone <remote_repository_URL>
+
+
+You can verify the remote repository using:
+ - git remote -v
+
+
+2. Pushing Changes to GitHub
+After making commits, you can push your changes to the remote repository on GitHub. If you haven't already created a branch on GitHub, you'll need to push the current branch.
+ - git push -u origin <branch_name>
+
+
+3. Pulling Changes from GitHub
+When collaborating with others, you’ll need to pull changes from GitHub to update your local repository with new commits.
+ - git pull
+
+
+4. Cloning a Repository
+If you want to download a GitHub repository onto your local machine, you use the git clone command.
+ - git clone <remote_repository_URL>
+
+

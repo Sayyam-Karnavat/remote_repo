@@ -1,0 +1,32 @@
+
+# By default, Git starts with a single branch called main (or sometimes master). To work on a new feature or bug fix, it's a good practice to create a new branch.
+ - git branch <branch_name>
+
+
+# Switching to a Branch (Our main branch is named "master")
+To start working in a new branch, you need to switch to it.
+- git switch <branch_name> :- Now you are working in the different branch, and any changes you make will be isolated from the main branch.
+
+
+# Listing Branches
+You can list all branches in your repository using:
+- git branch
+
+
+
+# Merging branches
+
+Once you're done working on a branch, you can merge it back into the main (or another) branch. First, make sure you switch back to the branch you want to merge into, typically main.
+In our case it is "master"
+    - git switch master
+    - git merge <branch>
+
+
+# Handling Merge Conflicts
+    Sometimes, Git will encounter conflicts when merging branches. This happens when the same part of a file is modified in both branches.
+
+When a merge conflict occurs:
+ - Git will show which files have conflicts.
+ - You'll need to manually edit the files to resolve the conflicts.
+ - Once the conflicts are resolved, you can stage and commit the resolved files.
+
